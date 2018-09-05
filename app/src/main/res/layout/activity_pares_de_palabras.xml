@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".paresdepalabras.ParesDePalabras">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="Pares de palabras"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/PPComenzar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/PPComenzar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BDBDBD"
+        android:onClick="onClick"
+        android:text="Comenzar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <TextView
+        android:id="@+id/PPGuion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="–"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.291"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/PPPalabra1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Palabra 1"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/PPGuion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.291" />
+
+    <TextView
+        android:id="@+id/PPPalabra2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Palabra 2"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PPGuion"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.291" />
+
+    <TextView
+        android:id="@+id/PPPalabGuia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Palabra Guía"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PPGuion"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <Button
+        android:id="@+id/PPBt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BDBDBD"
+        android:enabled="false"
+        android:onClick="onButtonClickParesDePalabras"
+        android:text="MESA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PPPalabGuia"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <Button
+        android:id="@+id/PPBt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BDBDBD"
+        android:enabled="false"
+        android:onClick="onButtonClickParesDePalabras"
+        android:text="CARRO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/PPBt3"
+        app:layout_constraintStart_toEndOf="@+id/PPBt1"
+        app:layout_constraintTop_toBottomOf="@+id/PPPalabGuia"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <Button
+        android:id="@+id/PPBt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BDBDBD"
+        android:enabled="false"
+        android:onClick="onButtonClickParesDePalabras"
+        android:text="CUADRO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PPPalabGuia"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <Button
+        android:id="@+id/PPBt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BDBDBD"
+        android:enabled="false"
+        android:onClick="onButtonClickParesDePalabras"
+        android:text="LECHE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PPBt2"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <Button
+        android:id="@+id/PPBt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BDBDBD"
+        android:enabled="false"
+        android:onClick="onButtonClickParesDePalabras"
+        android:text="BOSQUE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PPBt2"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <Button
+        android:id="@+id/PPBt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BDBDBD"
+        android:enabled="false"
+        android:onClick="onButtonClickParesDePalabras"
+        android:text="RUTA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PPBt4"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <Button
+        android:id="@+id/PPBt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BDBDBD"
+        android:enabled="false"
+        android:onClick="onButtonClickParesDePalabras"
+        android:text="TIERRA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/PPBt8"
+        app:layout_constraintStart_toEndOf="@+id/PPBt6"
+        app:layout_constraintTop_toBottomOf="@+id/PPBt5"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <Button
+        android:id="@+id/PPBt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BDBDBD"
+        android:enabled="false"
+        android:onClick="onButtonClickParesDePalabras"
+        android:text="PUERTA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PPBt5"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <Button
+        android:id="@+id/PPBt9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BDBDBD"
+        android:enabled="false"
+        android:onClick="onButtonClickParesDePalabras"
+        android:text="PLATO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PPBt6"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <Button
+        android:id="@+id/PPBt10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BDBDBD"
+        android:enabled="false"
+        android:onClick="onButtonClickParesDePalabras"
+        android:text="CAMA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PPBt8"
+        app:layout_constraintVertical_bias="0.157" />
+
+</android.support.constraint.ConstraintLayout>

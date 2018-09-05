@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Memauditivares">
+
+    <LinearLayout
+        android:layout_width="321dp"
+        android:layout_height="391dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/MATextVierCorrectas"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correctas:" />
+
+        <TextView
+            android:id="@+id/MATextVierIncorrectas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incorrectas:" />
+
+        <TextView
+            android:id="@+id/MATextViewTiempo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correctas:" />
+
+        <TextView
+            android:id="@+id/MATextViewTiempo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incorrectas:" />
+
+        <TextView
+            android:id="@+id/MATextViewTiempo3"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correctas:" />
+
+        <TextView
+            android:id="@+id/MATextViewTiempo4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incorrectas:" />
+
+        <TextView
+            android:id="@+id/MATextViewTiempo5"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correctas:" />
+
+        <TextView
+            android:id="@+id/MATextViewTiempo6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incorrectas:" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

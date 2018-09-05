@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hernandramosb.memdetrabajotesis">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Inicio">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Menu" />
+        <activity android:name=".Registro" />
+        <activity android:name=".Memauditiva" />
+        <activity
+            android:name=".Memauditivares"
+            android:label="@string/title_activity_memauditivares"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".paresdepalabras.ParesDePalabras" />
+        <activity android:name=".borraresto" />
+        <activity android:name=".spandesimbolos.SpanDeSimbolos" />
+        <activity android:name=".Paresdepalres" />
+        <activity android:name=".Spandesimres" />
+        <activity android:name=".Niveles_ma" />
+        <activity android:name=".Niveles_pp" />
+        <activity android:name=".Niveles_ss" />
+        <activity android:name=".MemAuditiva1" />
+        <activity android:name=".ParesDePalabras1" />
+        <activity android:name=".SpanDeSimbolos1"></activity>
+    </application>
+
+</manifest>

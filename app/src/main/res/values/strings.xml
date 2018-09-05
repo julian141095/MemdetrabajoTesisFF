@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MemdetrabajoTesis</string>
+    <string name="title_activity_menu">Menú</string>
+    <string name="title_activity_memauditivares">Memauditivares</string>
+    <string name="title_activity_span_de_simbolos">SpanDeSimbolos</string>
+    <string name="main_cambiar_imagen">Imagen Aleatoria</string>
+
+</resources>
